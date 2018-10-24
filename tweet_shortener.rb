@@ -32,8 +32,9 @@ def word_substituter(tweet)
   
   words = tweet.split(" ")
   words.each do |i|
-    if i == dictionary.keys
-      i.replace(dictionary.values)
+    dictionary.each do |key, value|
+    if i ==  keys
+      i.replace(value)
     end
   end
   words.join(" ")
