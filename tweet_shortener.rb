@@ -33,10 +33,10 @@ def word_substituter(tweet)
   words = tweet.split(" ")
   words.each do |i|
     if i == dictionary.keys
-      i.replace(dictionary.value)
+      i.replace(dictionary.values)
     end
   end
-  
+  word.join(" ")
 end
 
 def bulk_tweet_shortener(tweets)
