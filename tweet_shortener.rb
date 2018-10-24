@@ -36,6 +36,7 @@ def word_substituter(tweet)
     if i ==  keys
       i.replace(value)
     end
+    end
   end
   words.join(" ")
 end
